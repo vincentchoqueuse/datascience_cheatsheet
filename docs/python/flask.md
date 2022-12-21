@@ -1,5 +1,4 @@
 # Flask
 
-::: info
-Documentation: https://flask.palletsprojects.com/
-:::
+* [Documentation](https://flask.palletsprojects.com/)
+

@@ -4,37 +4,60 @@
 
 * Miniconda: https://docs.conda.io/en/latest/miniconda.html
 
-## Basic Usage
+## Managing Environment
 
-* Get list of installed environments
+### Get list of environments
 
 ```
 conda env list
 ```
 
-* Install an environment
+This command returns the list of installed environment. The active environment is specified by the symbol `*`.
+
+```
+base                  *  /opt/anaconda3
+py_37                    /opt/anaconda3/envs/py3_7
+my_env                   /opt/anaconda3/envs/my_env
+```
+
+
+### Install an environment
+
+To create an environment called `my_env` with python 3.9, run 
 
 ```
 conda create --name my_env python=3.9
 ```
 
-* Activate an environment
+### Activate an environment
 
 ```
 conda activate my_env
 ```
 
-## Package Management for the active environment
+### Desactivate an environment
 
-* Get list of packages
+```
+conda deactivate
+```
+
+## Package Management
+
+### Get list of packages
 
 ```
 pip list
 ```
 
-* Install a new package
+### Install a new package
 
 ```
 conda install numpy
+```
+
+or
+
+```
+pip install numpy
 ```
 

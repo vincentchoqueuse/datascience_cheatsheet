@@ -27,7 +27,7 @@ export default {
                 {
                   text: 'Latex',
                   items: [
-                    { text: 'Latex', link: '/latex/' },
+                    { text: 'General Syntax', link: '/latex/' },
                     { text: 'Tikz', link: '/latex/tikz' },
                     { text: 'Pgfplot', link: '/latex/pgfplot' }
                   ]
@@ -37,14 +37,16 @@ export default {
                 {
                   text: 'Python',
                   items: [
-                    { text: 'Index', link: '/python/' },
-                    { text: 'File Manipulations', link: '/python/files' },
+                    { text: 'General Syntax', link: '/python/' },
+                    { text: 'Read/Write Files', link: '/python/files' },
                     { text: 'Scientific Stack', link: '/python/scientific' },
                     { text: 'Notebook', link: '/python/notebook' },
                     { text: 'Jinja', link: '/python/jinja' },
                     { text: 'Seaborn', link: '/python/seaborn' },
                     { text: 'PyTorch', link: '/python/pytorch' },
-                    { text: 'Python control', link: '/python/control' }
+                    { text: 'Python control', link: '/python/control' },
+                    { text: 'Django', link: '/python/django' },
+                    { text: 'Flask', link: '/python/flask' },
                   ]
                 }
               ],
@@ -56,6 +58,7 @@ export default {
                     { text: 'HTML', link: '/web/html' },
                     { text: 'CSS', link: '/web/css' },
                     { text: 'Javascript', link: '/web/js' },
+                    { text: 'Markdown', link: '/web/markdown' },
                     { text: 'Bootstrap', link: '/web/bootstrap' },
                     { text: 'SVG', link: '/web/svg' }
                   ]

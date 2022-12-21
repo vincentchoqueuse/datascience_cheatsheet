@@ -1,4 +1,4 @@
-# File Manipulations
+# Read/Write Files
 
 ## Text File
 
@@ -10,11 +10,6 @@ To read/write to a file in Python, you will want to use the `with` statement, wh
 ```python
 with open('filename.txt') as file:
     content = file.read()
-```
-
-```python
-with open('filename.txt') as file:
-...     file.readlines()
 ```
 
 You can also iterate through the file line by line:
