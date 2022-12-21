@@ -68,15 +68,24 @@ export default {
               ],
               '/web/': [
                 {
-                  text: 'Web',
+                  text: 'General',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
                     { text: 'Index', link: '/web/' },
                     { text: 'HTML', link: '/web/html' },
                     { text: 'CSS', link: '/web/css' },
                     { text: 'Javascript', link: '/web/js' },
                     { text: 'Markdown', link: '/web/markdown' },
-                    { text: 'Bootstrap', link: '/web/bootstrap' },
                     { text: 'SVG', link: '/web/svg' }
+                  ]
+                },
+                {
+                  text: 'Frameworks',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Bootstrap', link: '/web/bootstrap' },
                   ]
                 }
               ]
