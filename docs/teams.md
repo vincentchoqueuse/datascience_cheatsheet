@@ -37,7 +37,7 @@ const members = [
       Our Team
     </template>
     <template #lead>
-      This cheatsheet has been created and is maintained by a group of [ENIB](https://www.enib.fr/fr/) professors and students.  
+      This cheatsheet has been created and is maintained by a group of <a href="https://www.enib.fr/fr/">ENIB</a> professors and students.  
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers
