@@ -4,7 +4,7 @@
 Documentation: https://getbootstrap.com
 :::
 
-## Starting Template
+## Starter Template
 
 ```html
 <!doctype html>
