@@ -28,7 +28,7 @@ export default {
                   text: 'Latex',
                   items: [
                     { text: 'Latex', link: '/latex/' },
-                    { text: 'Tikz', link: '/latex/tikz' }
+                    { text: 'Tikz', link: '/latex/tikz' },
                     { text: 'Pgfplot', link: '/latex/pgfplot' }
                   ]
                 }
