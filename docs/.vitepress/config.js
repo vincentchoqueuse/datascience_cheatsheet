@@ -40,10 +40,11 @@ export default {
                     { text: 'Index', link: '/python/' },
                     { text: 'File Manipulations', link: '/python/files' },
                     { text: 'Scientific Stack', link: '/python/scientific' },
-                    { text: 'Python control', link: '/python/control' },
+                    { text: 'Notebook', link: '/python/notebook' },
                     { text: 'Jinja', link: '/python/jinja' },
                     { text: 'Seaborn', link: '/python/seaborn' },
-                    { text: 'PyTorch', link: '/python/pytorch' }
+                    { text: 'PyTorch', link: '/python/pytorch' },
+                    { text: 'Python control', link: '/python/control' }
                   ]
                 }
               ],
