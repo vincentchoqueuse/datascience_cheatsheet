@@ -24,7 +24,8 @@ export default {
                 text: 'Getting Started',
                 items: [
                   { text: 'Index', link: '/getting-started/' },
-                  { text: 'Conda', link: '/getting-started/conda' }
+                  { text: 'Conda', link: '/getting-started/conda' },
+                  { text: 'Git', link: '/getting-started/git' }
                 ]
               }
             ],
