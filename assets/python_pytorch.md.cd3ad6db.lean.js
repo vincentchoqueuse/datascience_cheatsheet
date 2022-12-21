@@ -1,1 +1,0 @@
-import{_ as t,c as e,o,a as r}from"./app.d13cb1be.js";const f=JSON.parse('{"title":"Pytorch","description":"","frontmatter":{},"headers":[],"relativePath":"python/pytorch.md"}'),a={name:"python/pytorch.md"},c=r("",2),s=[c];function n(_,h,p,d,i,l){return o(),e("div",null,s)}const y=t(a,[["render",n]]);export{f as __pageData,y as default};

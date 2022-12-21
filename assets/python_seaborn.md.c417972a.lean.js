@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a as o}from"./app.fbecd2b9.js";const f=JSON.parse('{"title":"Seaborn","description":"","frontmatter":{},"headers":[],"relativePath":"python/seaborn.md"}'),r={name:"python/seaborn.md"},s=o("",2),n=[s];function c(_,d,i,p,h,l){return t(),a("div",null,n)}const m=e(r,[["render",c]]);export{f as __pageData,m as default};
