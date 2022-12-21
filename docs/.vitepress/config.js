@@ -86,6 +86,7 @@ export default {
                   collapsed: true,
                   items: [
                     { text: 'Bootstrap', link: '/web/bootstrap' },
+                    { text: 'Vue', link: '/web/vue' },
                   ]
                 }
               ]
