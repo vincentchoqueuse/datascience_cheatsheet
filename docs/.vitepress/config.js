@@ -35,7 +35,9 @@ export default {
               ],
               '/python/': [
                 {
-                  text: 'Python',
+                  text: 'General',
+                  collapsible: true,
+                  collapsed: false,
                   items: [
                     { text: 'General Syntax', link: '/python/' },
                     { text: 'Read/Write Files', link: '/python/files' },
@@ -47,6 +49,28 @@ export default {
                     { text: 'Python control', link: '/python/control' },
                     { text: 'Django', link: '/python/django' },
                     { text: 'Flask', link: '/python/flask' },
+                  ]
+                },
+                {
+                  text: 'Scientific Stack',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Scientific Stack', link: '/python/scientific' },
+                    { text: 'Notebook', link: '/python/notebook' },
+                    { text: 'Seaborn', link: '/python/seaborn' },
+                    { text: 'PyTorch', link: '/python/pytorch' },
+                    { text: 'Python control', link: '/python/control' },
+                  ]
+                },
+                {
+                  text: 'Web Development',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Jinja', link: '/python/jinja' },
+                    { text: 'Django', link: '/python/django' },
+                    { text: 'Flask', link: '/python/flask' }
                   ]
                 }
               ],
