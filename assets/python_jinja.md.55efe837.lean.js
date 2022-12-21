@@ -1,1 +1,0 @@
-import{_ as t,c as a,o as e,a as n}from"./app.fbecd2b9.js";const m=JSON.parse('{"title":"Jinja","description":"","frontmatter":{},"headers":[],"relativePath":"python/jinja.md"}'),o={name:"python/jinja.md"},s=n("",2),r=[s];function c(i,_,p,l,d,j){return e(),a("div",null,r)}const f=t(o,[["render",c]]);export{m as __pageData,f as default};

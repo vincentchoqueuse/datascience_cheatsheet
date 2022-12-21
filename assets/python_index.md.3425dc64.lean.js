@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as n}from"./app.fbecd2b9.js";const m=JSON.parse('{"title":"General Syntax","description":"","frontmatter":{},"headers":[],"relativePath":"python/index.md"}'),o={name:"python/index.md"},r=n("",2),s=[r];function c(_,d,i,p,l,h){return a(),t("div",null,s)}const x=e(o,[["render",c]]);export{m as __pageData,x as default};
