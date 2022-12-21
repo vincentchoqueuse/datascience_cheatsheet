@@ -12,6 +12,7 @@ export default {
           { text: 'Python', link: '/python/' },
           { text: 'Latex', link: '/latex/' },
           { text: 'Web', link: '/web/' },
+          { text: 'Contributors', link: 'teams' },
         ],
         sidebar: {
             '/getting-started/': [
