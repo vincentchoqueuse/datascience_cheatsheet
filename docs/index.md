@@ -10,7 +10,7 @@ If you suffer from these symptoms, this cheatsheet is for you.
 
 ## How to Contribute
 
-* Fork the github repo: https://github.com/vincentchoqueuse/datascience_cheatsheet
+* Fork the [github repo](https://github.com/vincentchoqueuse/datascience_cheatsheet)
 * Make some modifications to one or some markdown files in the `/docs` folder,
 * Commit your modifications,
 * Open a pull request.
