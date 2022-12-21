@@ -4,6 +4,10 @@ export default {
     description: 'A Data Science Cheatsheet.',
     base: "/datascience_cheatsheet/",
     themeConfig: {
+        footer: {
+          message: 'Released under the MIT License.',
+          copyright: 'Copyright © 2022-present'
+        },
         socialLinks: [
             { icon: 'github', link: 'https://github.com/vincentchoqueuse/datascience_cheatsheet' },
         ],

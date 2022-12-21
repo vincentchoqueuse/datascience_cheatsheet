@@ -36,6 +36,9 @@ const members = [
     <template #title>
       Our Team
     </template>
+    <template #lead>
+      This cheatsheet has been created and is maintained by a group of [ENIB](https://www.enib.fr/fr/) professors and students.  
+    </template>
   </VPTeamPageTitle>
   <VPTeamMembers
     :members="members"
