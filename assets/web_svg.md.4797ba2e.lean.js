@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,d as o}from"./app.7b2f8a4c.js";const f=JSON.parse('{"title":"SVG","description":"","frontmatter":{},"headers":[],"relativePath":"web/svg.md"}'),s={name:"web/svg.md"},r=o("",2),c=[r];function n(_,d,i,l,p,h){return a(),t("div",null,c)}const v=e(s,[["render",n]]);export{f as __pageData,v as default};

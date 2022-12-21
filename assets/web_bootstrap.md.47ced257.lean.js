@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as e,d as a}from"./app.7b2f8a4c.js";const m=JSON.parse('{"title":"Bootstrap","description":"","frontmatter":{},"headers":[],"relativePath":"web/bootstrap.md"}'),r={name:"web/bootstrap.md"},s=a("",2),c=[s];function _(n,p,i,d,l,h){return e(),o("div",null,c)}const f=t(r,[["render",_]]);export{m as __pageData,f as default};
