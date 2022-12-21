@@ -10,7 +10,8 @@ export default {
         nav: [
           { text: 'Getting Started', link: '/getting-started/' },
           { text: 'Python', link: '/python/' },
-          { text: 'Latex', link: '/latex/' }
+          { text: 'Latex', link: '/latex/' },
+          { text: 'Web', link: '/web/' },
         ],
         sidebar: {
             '/getting-started/': [
@@ -26,7 +27,9 @@ export default {
                 {
                   text: 'Latex',
                   items: [
-                    { text: 'Latex', link: '/latex/' }
+                    { text: 'Latex', link: '/latex/' },
+                    { text: 'Tikz', link: '/latex/tikz' }
+                    { text: 'Pgfplot', link: '/latex/pgfplot' }
                   ]
                 }
               ],
@@ -36,7 +39,23 @@ export default {
                   items: [
                     { text: 'Index', link: '/python/' },
                     { text: 'File Manipulations', link: '/python/files' },
-                    { text: 'Scientific Stack', link: '/python/scientific' }
+                    { text: 'Scientific Stack', link: '/python/scientific' },
+                    { text: 'Python control', link: '/python/control' },
+                    { text: 'Jinja', link: '/python/jinja' },
+                    { text: 'Seaborn', link: '/python/seaborn' },
+                    { text: 'PyTorch', link: '/python/pytorch' }
+                  ]
+                }
+              ],
+              '/web/': [
+                {
+                  text: 'Web',
+                  items: [
+                    { text: 'Index', link: '/web/' },
+                    { text: 'HTML', link: '/web/html' },
+                    { text: 'CSS', link: '/web/css' },
+                    { text: 'Javascript', link: '/web/js' },
+                    { text: 'SVG', link: '/web/svg' }
                   ]
                 }
               ]

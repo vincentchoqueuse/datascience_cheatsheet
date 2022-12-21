@@ -2,7 +2,7 @@
 
 ## Examples
 
-### Show Sine wave
+### Figure Plotting
 
 ```python
 import numpy as np
