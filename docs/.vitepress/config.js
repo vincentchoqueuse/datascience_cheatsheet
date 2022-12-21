@@ -56,6 +56,7 @@ export default {
                     { text: 'HTML', link: '/web/html' },
                     { text: 'CSS', link: '/web/css' },
                     { text: 'Javascript', link: '/web/js' },
+                    { text: 'Bootstrap', link: '/web/bootstrap' },
                     { text: 'SVG', link: '/web/svg' }
                   ]
                 }
