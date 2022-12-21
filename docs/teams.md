@@ -15,7 +15,7 @@ const members = [
     title: 'Contributor',
     links: [
       { icon: 'github', link: 'https://github.com/vincentchoqueuse' },
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/vincent-choqueuse-388a5720/' }
+      { icon: 'linkedin', link: 'https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiC66rojIv8AhVuQaQEHasxDx8QFnoECBAQAQ&url=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fvincent-choqueuse-388a5720&usg=AOvVaw0Wg8hbubGJ3yTOQWkxCtzr' }
     ]
   },
     {
