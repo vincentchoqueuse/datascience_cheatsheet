@@ -1,8 +1,7 @@
 # HTML
 
-::: info
-Documentation: https://developer.mozilla.org/en-US/docs/Web/HTML
-:::
+* [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
 
 ## Starter Template
 

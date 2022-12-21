@@ -1,5 +1,3 @@
 # Pytorch
 
-::: info
-Documentation: https://pytorch.org/docs/stable/index.html
-:::
+* [Documentation](https://pytorch.org/docs/stable/index.html)

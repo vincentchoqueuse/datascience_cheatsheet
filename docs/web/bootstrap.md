@@ -1,8 +1,6 @@
 # Bootstrap
 
-::: info
-Documentation: https://getbootstrap.com
-:::
+* [Documentation](https://getbootstrap.com)
 
 ## Starter Template
 

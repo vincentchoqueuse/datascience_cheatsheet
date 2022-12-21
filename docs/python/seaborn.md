@@ -1,5 +1,3 @@
 # Seaborn
 
-::: info
-Documentation: https://seaborn.pydata.org
-:::
+* [Documentation](https://seaborn.pydata.org)

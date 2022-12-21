@@ -1,12 +1,7 @@
 # Scientific Stack
 
-::: info
-Numpy Documentation: https://numpy.org/doc/stable/
-:::
+* [Documentation](https://numpy.org/doc/stable/)
 
-::: info
-Scipy Documentation: https://docs.scipy.org/doc/scipy/
-:::
 
 ## Examples
 

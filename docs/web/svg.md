@@ -1,5 +1,4 @@
 # SVG
 
-::: info
-Documentation: https://developer.mozilla.org/en-US/docs/Web/SVG
-:::
+* [Documentation](https://developer.mozilla.org/en-US/docs/Web/SVG)
+

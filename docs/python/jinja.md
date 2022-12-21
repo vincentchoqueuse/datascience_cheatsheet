@@ -1,5 +1,3 @@
 # Jinja
 
-::: info
-Documentation: https://jinja.palletsprojects.com/
-:::
+* [Documentation](https://jinja.palletsprojects.com/)
