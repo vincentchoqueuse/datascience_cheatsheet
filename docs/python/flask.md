@@ -1,7 +1,8 @@
 # Flask
 
-## Installation
 * [Documentation](https://flask.palletsprojects.com/)
+
+## Installation
 
 ```
 pip install Flask
