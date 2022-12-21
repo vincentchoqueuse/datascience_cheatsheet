@@ -1,5 +1,6 @@
 export default {
     title: 'Cheatsheet',
+    logo: '/ENIB.svg',
     description: 'A Data Science Cheatsheet.',
     base: "/datascience_cheatsheet/",
     themeConfig: {
