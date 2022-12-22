@@ -103,7 +103,7 @@ The `sphinx.ext.autodoc` can import the modules you are documenting, and pull in
 
 ### Configuration file 
 
-To activate the `sphinx.ext.autodoc` extension, change the `config.py` as follows
+To activate the `sphinx.ext.autodoc` extension, change the following files as
 
 
 ::: code-group
