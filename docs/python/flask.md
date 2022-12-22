@@ -44,7 +44,7 @@ flask run
 
 Open a browser and type in the URL `http://127.0.0.1:5000/`, you will see the string `Hello, World!` as a response, this confirms that your application is successfully running.
 
-### Using a static HTML templates
+### Using static HTMLs
 
 First create a `templates` directory that will contain all your `.html` files.
 
