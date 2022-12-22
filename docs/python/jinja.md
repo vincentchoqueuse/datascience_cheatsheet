@@ -30,3 +30,51 @@ template = env.get_template("index.html")
 content = template.render(message = "Hello World !")
 print(content)
 ```
+
+
+##  Variable Filters
+
+```html
+{{ message | upper  }}
+```
+  
+## if Statements
+
+```html
+{% if message == 'hello' %}
+Demat
+{% else %}
+Kenavo
+{% endif %}
+```
+
+## for Loops
+
+```html
+{% for my_item in my_list %}
+<li>my_item</li>
+{% endfor %}
+```
+
+## Template Inheritance
+
+
+::: code-group
+```html [base.html]
+<html>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>
+```
+
+```html [index.html]
+{% extends base.html %}
+
+{% block content %}
+    <h1>My Webpage</h1>
+    {{ message }}
+{% endblock %}
+```
+
+:::

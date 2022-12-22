@@ -1,13 +1,15 @@
 # Flask
 * [Documentation](https://flask.palletsprojects.com/)
 
-## Installation
+
+## Basic Application
+
+### Installation
 
 Use the following command to install Flask:
 ```bash
 pip install Flask
 ```
-## Basic application
 
 Create a `my_flask_project` directory : 
 ```bash
@@ -40,7 +42,7 @@ flask run
 
 Open a browser and type in the URL `http://127.0.0.1:5000/`, you will see the string `Hello, World!` as a response, this confirms that your application is successfully running.
 
-## Using a static HTML templates
+### Using a static HTML templates
 
 First create a `templates` directory that will contain all your `.html` files.
 
@@ -48,7 +50,17 @@ First create a `templates` directory that will contain all your `.html` files.
 mkdir templates
 ```
 
-Write a minimalist `index.html` file that contain this code :
+Write an empty `index.html` file in this folder. Your project tree should looks like this :
+
+```
+my_flask_project/
+├── ...
+├── templates/
+│   └── index.html
+└── app.py
+```
+
+Modify the content of the file `index.html` as follows :
 
 ::: code-group
 ```html [templates/index.html]
@@ -70,16 +82,6 @@ Write a minimalist `index.html` file that contain this code :
 ```
 :::
 
-Your project tree should looks like this :
-
-```
-my_flask_project/
-├── ...
-├── templates/
-│   └── index.html
-└── app.py
-```
-
 Now let's modify the `app.py` to take into account our changes.
 
 ::: code-group
@@ -96,9 +98,7 @@ def index():
 ```
 :::
 
-The `index()` view function returns the result of calling `render_template()` with index.html as an argument, this tells `render_template()` to look for a file called `index.html` in the templates folder.
-
-The file will have a single view function that will be responsible for handling requests to the main `/` route.
+The `index()` view function returns the result of calling `render_template()` with index.html as an argument, this tells `render_template()` to look for a file called `index.html` in the templates folder. The file will have a single view function that will be responsible for handling requests to the main `/` route.
 
 By running your app with 
 
@@ -107,7 +107,7 @@ flask run # 127.0.0.1:5000
 ```
 you should see the message `Hello World from index.html`.
 
-## Using static files
+### Using static files
 
 After following the [previous section](#using-html-templates), create a `static` directory that will contain all your static files.
 ```bash
@@ -142,3 +142,67 @@ flask run # 127.0.0.1:5000
 ```
 
 you should see the icon next to your tab title.
+
+## Jinja Template Engine
+
+In practice, the content of an HTML page usually depends on some python variables. Instead of manually creating the HTML page from scratch using Python, it is quite common to use a template engine such as `Jinja`
+
+### Basis Usage
+
+
+::: code-group
+```python [app.py]
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    message = "index.html"
+    return render_template('index.html', message=message)
+
+@app.route('/user/<int:id>')
+def index_user(id):
+    message = "user {}".format(id)
+    return render_template('index.html', message=message)
+
+```
+
+```html [templates/index.html]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+
+<body>
+    <p>Hello World from {{message}}</p>
+</body>
+
+</html>
+```
+:::
+
+Run your app with `flask run`, open a browser and type the URL `http://127.0.0.1:5000/user/1998`. You will see the message `Hello World from user 1998`.
+
+### Documentation
+
+* [Cheatsheet](/python/jinja)
+
+
+## SQL ALchemy ORM
+
+### Installation
+
+Use the following command to install Flask-SQLAlchemy:
+
+```bash
+pip install -U Flask-SQLAlchemy
+```
+
+
+

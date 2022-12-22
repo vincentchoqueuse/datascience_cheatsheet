@@ -1,7 +1,7 @@
 export default {
     title: 'Cheatsheet',
     
-    description: 'A Data Science Cheatsheet.',
+    description: 'ENIB Data Science Cheatsheet.',
     base: "/datascience_cheatsheet/",
     themeConfig: {
         logo: '/ENIB.svg',
@@ -26,7 +26,8 @@ export default {
                 items: [
                   { text: 'Index', link: '/getting-started/' },
                   { text: 'Conda', link: '/getting-started/conda' },
-                  { text: 'Git', link: '/getting-started/git' }
+                  { text: 'Git', link: '/getting-started/git' },
+                  { text: 'Terminal', link: '/getting-started/terminal' }
                 ]
               }
             ],
@@ -70,6 +71,16 @@ export default {
                     { text: 'Jinja', link: '/python/jinja' },
                     { text: 'Django', link: '/python/django' },
                     { text: 'Flask', link: '/python/flask' }
+                  ]
+                },
+                {
+                  text: 'Miscellaneous',
+                  collapsible: true,
+                  collapsed: true,
+                  items: [
+                    { text: 'Tkinter', link: '/python/tkinter' },
+                    { text: 'PyQT', link: '/python/pyqt' },
+                    { text: 'Sphinx', link: '/python/sphinx' }
                   ]
                 }
               ],
