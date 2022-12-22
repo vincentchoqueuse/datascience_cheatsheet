@@ -1,5 +1,7 @@
 # Jinja
 
+Jinja is a template engine for the Python programming language. Jinja is Flask's default template engine.
+
 * [Documentation](https://jinja.palletsprojects.com/)
 
 
