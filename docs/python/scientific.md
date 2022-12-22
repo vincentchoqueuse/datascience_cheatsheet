@@ -69,6 +69,7 @@ plt.ylabel('s(t)')
 ### Bode Diagram of LTI Systems
 
 ```python 
+import numpy as np
 from scipy.signal import lti 
 
 sys = lti([2], [3, 1]) # first order system

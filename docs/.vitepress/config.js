@@ -5,6 +5,7 @@ export default {
     base: "/datascience_cheatsheet/",
     themeConfig: {
         logo: '/ENIB.svg',
+        outline: 'deep',
         footer: {
           message: 'Released under the MIT License.',
           copyright: 'Copyright © 2022-present'
