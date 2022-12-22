@@ -48,7 +48,7 @@ export default {
                   collapsible: true,
                   collapsed: false,
                   items: [
-                    { text: 'Basic Usage', link: '/python/' },
+                    { text: 'Basics', link: '/python/' },
                     { text: 'Read/Write Files', link: '/python/files' }
                   ]
                 },
@@ -91,10 +91,10 @@ export default {
                   collapsible: true,
                   collapsed: false,
                   items: [
-                    { text: 'Index', link: '/web/' },
+                    { text: 'Basics', link: '/web/' },
                     { text: 'HTML', link: '/web/html' },
                     { text: 'CSS', link: '/web/css' },
-                    { text: 'Javascript', link: '/web/js' },
+                    { text: 'JavaScript', link: '/web/js' },
                     { text: 'Markdown', link: '/web/markdown' },
                     { text: 'SVG', link: '/web/svg' }
                   ]

@@ -60,9 +60,21 @@ my_flask_project/
 └── app.py
 ```
 
-Modify the content of the file `index.html` as follows :
+Modify the `app.py` and `index.html` to take into account our changes.
 
 ::: code-group
+```python [app.py]
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+...
+```
+
 ```html [templates/index.html]
 <!DOCTYPE html>
 <html lang="en">
@@ -82,23 +94,7 @@ Modify the content of the file `index.html` as follows :
 ```
 :::
 
-Now let's modify the `app.py` to take into account our changes.
-
-::: code-group
-```python [app.py]
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-...
-```
-:::
-
-The `index()` view function returns the result of calling `render_template()` with index.html as an argument, this tells `render_template()` to look for a file called `index.html` in the templates folder. The file will have a single view function that will be responsible for handling requests to the main `/` route.
+The `index()` view function in the file `app.py` returns the result of calling `render_template()` with index.html as input argument, this tells `render_template()` to look for a file called `index.html` in the templates folder. The file will have a single view function that will be responsible for handling requests to the main `/` route.
 
 By running your app with 
 

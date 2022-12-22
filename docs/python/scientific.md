@@ -2,6 +2,8 @@
 
 ## Numpy
 
+NumPy is a library that adds support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
+
 * [Documentation](https://numpy.org/doc/stable/reference/index.html)
 
 ### Import
@@ -12,10 +14,15 @@ import numpy as np
 
 ## Scipy
 
+
+SciPy is a free open-source library used for scientific computing and technical computing. SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering.
+
 * [Documentation](https://docs.scipy.org/doc/scipy/reference/index.html)
 
 
 ## Matplotlib
+
+Matplotlib is a plotting library that provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK. 
 
 * [Documentation](https://matplotlib.org/stable/api/index.html)
 

@@ -1,4 +1,6 @@
-# Javascript
+# JavaScript
+
+JavaScript (JS) is a programming language that is one of the core technologies of the World Wide Web.
 
 * [Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
