@@ -5,7 +5,7 @@ Sphinx is a documentation generator written and used by the Python community.
 * [Documentation](https://www.sphinx-doc.org/en/master/)
 
 
-## Assumed folder structure
+## Folder structure
 
 In the following, we assume that your python module lives in a folder `src`. To clearly separate the source code from the documentation, create a `docs` folder at the same level of your `src` folder.
 
