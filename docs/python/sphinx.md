@@ -129,8 +129,9 @@ API
 ```python [src/core.py]
 def show_message(name):
     """show_message
-    
     print a message
+
+    :param name: str 
     """
     print("Hello {}".format(name))
 
