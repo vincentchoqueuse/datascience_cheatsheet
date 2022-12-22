@@ -1,4 +1,4 @@
-# Scientific Stack
+# Basics
 
 ## Numpy
 

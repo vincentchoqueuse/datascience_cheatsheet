@@ -57,7 +57,7 @@ export default {
                   collapsible: true,
                   collapsed: true,
                   items: [
-                    { text: 'Scientific Stack', link: '/python/scientific' },
+                    { text: 'Basics', link: '/python/scientific' },
                     { text: 'Notebook', link: '/python/notebook' },
                     { text: 'Seaborn', link: '/python/seaborn' },
                     { text: 'PyTorch', link: '/python/pytorch' },
