@@ -1,4 +1,7 @@
 # Flask
+
+Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+
 * [Documentation](https://flask.palletsprojects.com/)
 
 
@@ -44,7 +47,7 @@ flask run
 
 Open a browser and type in the URL `http://127.0.0.1:5000/`, you will see the string `Hello, World!` as a response, this confirms that your application is successfully running.
 
-### Using static HTMLs
+### Using static HTML
 
 First create a `templates` directory that will contain all your `.html` files.
 
