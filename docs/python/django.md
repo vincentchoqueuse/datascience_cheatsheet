@@ -1,6 +1,6 @@
 # Django 
 
-Django is a free and open-source, web framework that follows the model–template–views (MTV) architectural pattern.[7][8]
+Django is a free and open-source, web framework that follows the model–template–views (MTV) architectural pattern.
 
 * [Documentation](https://docs.djangoproject.com/)
 
