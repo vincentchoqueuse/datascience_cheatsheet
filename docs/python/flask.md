@@ -2,7 +2,7 @@
 * [Documentation](https://flask.palletsprojects.com/)
 
 
-## Basic Application
+## Simple Application
 
 ### Installation
 
@@ -16,6 +16,8 @@ Create a `my_flask_project` directory :
 mkdir my_flask_project
 cd my_flask_project
 ```
+
+### Basic Usage
 
 This `app.py` file will serve as a minimal example of how to handle HTTP requests. Inside it, you need to import the [Flask object](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask), and create a function that returns an HTTP response.
 
