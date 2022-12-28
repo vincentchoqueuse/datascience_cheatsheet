@@ -1,5 +1,7 @@
 # Conda
 
+Conda is an open-source,cross-platform, language-agnostic package manager and environment management system. It was developed to solve difficult package management challenges faced by Python data scientists.
+
 ## Installation
 
 * Miniconda: https://docs.conda.io/en/latest/miniconda.html

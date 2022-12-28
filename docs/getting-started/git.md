@@ -1,5 +1,7 @@
 # Git
 
+Git is a distributed version control system: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.
+
 * [Documentation](https://git-scm.com/docs)
 * [Book](https://git-scm.com/book/en/v2)
 

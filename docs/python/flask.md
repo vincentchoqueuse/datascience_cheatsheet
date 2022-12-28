@@ -1,8 +1,11 @@
 # Flask
+
+Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+
 * [Documentation](https://flask.palletsprojects.com/)
 
 
-## Basic Application
+## Simple Application
 
 ### Installation
 
@@ -16,6 +19,8 @@ Create a `my_flask_project` directory :
 mkdir my_flask_project
 cd my_flask_project
 ```
+
+### Basic Usage
 
 This `app.py` file will serve as a minimal example of how to handle HTTP requests. Inside it, you need to import the [Flask object](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask), and create a function that returns an HTTP response.
 
@@ -42,7 +47,7 @@ flask run
 
 Open a browser and type in the URL `http://127.0.0.1:5000/`, you will see the string `Hello, World!` as a response, this confirms that your application is successfully running.
 
-### Using a static HTML templates
+### Using static HTML
 
 First create a `templates` directory that will contain all your `.html` files.
 
@@ -60,9 +65,21 @@ my_flask_project/
 └── app.py
 ```
 
-Modify the content of the file `index.html` as follows :
+Modify the `app.py` and `index.html` to take into account our changes.
 
 ::: code-group
+```python [app.py]
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+...
+```
+
 ```html [templates/index.html]
 <!DOCTYPE html>
 <html lang="en">
@@ -82,23 +99,7 @@ Modify the content of the file `index.html` as follows :
 ```
 :::
 
-Now let's modify the `app.py` to take into account our changes.
-
-::: code-group
-```python [app.py]
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-...
-```
-:::
-
-The `index()` view function returns the result of calling `render_template()` with index.html as an argument, this tells `render_template()` to look for a file called `index.html` in the templates folder. The file will have a single view function that will be responsible for handling requests to the main `/` route.
+The `index()` view function in the file `app.py` returns the result of calling `render_template()` with index.html as input argument, this tells `render_template()` to look for a file called `index.html` in the templates folder. The file will have a single view function that will be responsible for handling requests to the main `/` route.
 
 By running your app with 
 

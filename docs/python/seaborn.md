@@ -2,7 +2,7 @@
 
 * [Documentation](https://seaborn.pydata.org)
 
-The Python visualization library Seaborn is based on matplotlib and provides a high-level interface for drawing attractive statistical graphics.
+Seaborn is a visualization library based on Matplotlib that provides a high-level interface for drawing attractive statistical graphics.
 
 ## Import Library
 
