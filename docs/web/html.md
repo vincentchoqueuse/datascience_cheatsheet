@@ -42,7 +42,7 @@ To structure the page content, `HTML` provides dedicated tags :
 ```
 
 * `src` is your relative path to the image,
-* `alt` which is a text description of your image.
+* `alt` is a text description of your image.
 
 ### Marking up text
 
