@@ -7,16 +7,18 @@ The HyperText Markup Language (HTML) is the standard markup language for documen
 ## Basic Usage
 
 ### HTML for structuring content
-To implement semantic markup, `HTML` provides dedicated tags that you can use to represent these sections:
+
+To structure the page content, `HTML` provides dedicated tags :
 
 * header: `<header>`
 * navigation bar: `<nav>`
-* main content: `<main>`, with various content subsections represented by `<article>`, `<section>`, and `<div>` elements
+* main content: `<main>`, with various content subsections represented by `<article>`, `<section>`, `<div>` and `<span>` elements
 * sidebar: `<aside>`; often placed inside `<main>`
 * footer: `<footer>`
 
 
 ### Starter Template
+
 ::: code-group
 ```html [index.html]
 <!DOCTYPE html>
@@ -38,7 +40,9 @@ To implement semantic markup, `HTML` provides dedicated tags that you can use to
 ```html
 <img src="images/firefox-icon.png" alt="My test image" />
 ```
-`src` is your relative path to the image and `alt` which is a text description of your image.
+
+* `src` is your relative path to the image,
+* `alt` which is a text description of your image.
 
 ### Marking up text
 
@@ -60,7 +64,8 @@ To implement semantic markup, `HTML` provides dedicated tags that you can use to
 ```
 
 #### Lists
-`<ul>` determine the beginning and the end  of the list and `<li>` are list elements.
+
+`<ul>` determine the beginning and the end of the list and `<li>` are list elements.
 ```html
 <ul>
   <li>technologists</li>
@@ -69,17 +74,27 @@ To implement semantic markup, `HTML` provides dedicated tags that you can use to
 </ul>
 ```
 
+You can also create ordered lists using the `<ol>` tag
+
+```html
+<ol>
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ol>
+```
+
+
 ### Links
 
 ```html
-<a href="http://y2u.be/dQw4w9WgXcQ">My favorite video</a>
-```
-`src` is your link path.
-
-To open the link in a new tab, add the attribute `target="_blank"`
-```html
 <a href="http://y2u.be/dQw4w9WgXcQ" target="_blank">My favorite video</a>
 ```
+
+* `src` is your link path.
+* `target` is an html attribute that specifies where to open the linked document:
+  * `target="_self"` [default]: Opens the linked document in the same frame as it was clicked
+  * `target="_blank"`: Opens the linked document in a new window or tab
 
 ### Emphasis
 
@@ -90,7 +105,7 @@ To open the link in a new tab, add the attribute `target="_blank"`
 <p>The <b>last</b> is bold</p>
 ```
 ::: warning
-If you just want to put style on your text, it is preferable to do it with [`css`](https://vincentchoqueuse.github.io/datascience_cheatsheet/web/css.html)
+If you just want to put style on your text, it is preferable to do it with [`css`](/web/css)
 :::
 
 ## Advanced Usage
@@ -113,6 +128,7 @@ If you just want to put style on your text, it is preferable to do it with [`css
 :::
 
 ### Adding SVG
+
 For a simple website maintenance and to change your `.svg` easily it is preferable to use `<img>` tag. 
 ``` html
 <img src="rel/path/to/image.svg"/>

@@ -8,7 +8,10 @@ Cascading Style Sheets (CSS) is a style sheet language used for describing the p
 ## Basic Usage
 
 ### Adding CSS to your document
-To link `styles.css` to `index.html`, add the following line somewhere inside the `<head>` of the HTML document:
+
+CSS can be directly added in an html page using the `<style>...</style>` tag or an external file. 
+To link an external file called `styles.css` to the page `index.html`, add the following line somewhere inside the `<head>` of the HTML document:
+
 ::: code-group
 ```html [index.html]
 <link rel="stylesheet" href="styles.css" />
@@ -16,7 +19,10 @@ To link `styles.css` to `index.html`, add the following line somewhere inside th
 :::
 
 ### Adding a class
-In your CSS, you can target the class of `special` by creating a selector that starts with a point `.`
+
+To apply a css style to a particular HTML element, specify one or several class names in the `class` attribute of the HTML element. In the file `styles.css`, define the style of the class name `special` by
+creating a selector that starts with `.` and by adding some css attributes. 
+
 ::: code-group
 ```html [.html]
 <ul>
@@ -60,6 +66,7 @@ a:hover {
   color: orange;
 }
 ```
+
 ### Selectors & combinators
 ```css
 /* selects any <span> that is inside a <p>, which is inside an <article>  */
@@ -73,8 +80,10 @@ h1 + ul + p {
 
 ## SASS
 * [Documentation](https://sass-lang.com/documentation/)
+
 ### Variables
-Sass uses the `$` symbol to make something a variable. Here's an example:
+Sass uses the `$` symbol to define a variable.
+
 ::: code-group
 ```sass [sass]
 $font-stack: Helvetica, sans-serif
@@ -93,7 +102,7 @@ body {
 :::
 
 ### Nesting
-Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your `.html`. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
+Sass let you nest your CSS selectors in a way that follows the same visual hierarchy of your `.html`. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.
 ::: code-group
 ```sass [sass]
 nav

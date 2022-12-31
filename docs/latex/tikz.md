@@ -1,5 +1,29 @@
 # Tikz
 
+## Import Package 
+
+```tex 
+\usepackage{tikz}
+```
+
+## Basic flow chart
+
+```tex
+\begin{tikzpicture}[node distance=8em]
+\tikzset{block/.style={draw,rectangle, text width=5em, align=center,minimum height=3.5em,font=\scriptsize}};
+\node (n0) {};
+\node[block, right of=n0, node distance=6em] (n1) {Block \\ 1};
+\node[block, right of=n1] (n2) {Block \\ 2};
+\node[block, right of=n2] (n3) {Block \\ 3};
+\node[right of=n3, node distance=6em] (n4) {};
+%make connections
+\draw[->,>=latex] (n0)--(n1);
+\draw[->,>=latex] (n1)--(n2);
+\draw[->,>=latex] (n2)--(n3);
+\draw[->,>=latex] (n3)--(n4);
+\end{tikzpicture}
+```
+
 ## Electrical Circuit
 
 

@@ -16,7 +16,7 @@ A web page is usually created using three languages:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Starter Template</title>
-    <link href="./dist/style.css" rel="stylesheet">
+    <link href="./dist/styles.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -26,7 +26,7 @@ A web page is usually created using three languages:
 </html>
 ```
 
-```css [dist/style.css]
+```css [dist/styles.css]
 .info{
     color: red;
 }
