@@ -16,23 +16,23 @@ A web page is usually created using three languages:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Starter Template</title>
-    <link href="./dist/styles.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, world!</h1>
     <p id="message" class="info"></p>
-    <script src="./dist/app.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
 ```
 
-```css [dist/styles.css]
+```css [css/main.css]
 .info{
     color: red;
 }
 ```
 
-```js [dist/app.js]
+```js [js/main.js]
 document.addEventListener("DOMContentLoaded", (event) => {
     const elem = document.querySelector("#message");
     const today = new Date();
@@ -41,3 +41,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 ```
 
 :::
+
+
+### More Complete Template 
+
+* [HTML5 Boilerplate](https://html5boilerplate.com)
