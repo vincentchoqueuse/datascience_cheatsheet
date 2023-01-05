@@ -192,7 +192,7 @@ Run your app with `flask run`, open a browser and type the URL `http://127.0.0.1
 
 ### Documentation
 
-* [Cheatsheet](/python/jinja)
+* [Cheatsheet](/python/web/jinja)
 
 
 ## SQL ALchemy ORM
