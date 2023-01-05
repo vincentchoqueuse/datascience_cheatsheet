@@ -1,5 +1,7 @@
 # Cheatsheet 
 
+The topics in this cheatsheet can be accessed in the header.
+
 ## How to Contribute
 
 * Fork the [github repo](https://github.com/vincentchoqueuse/datascience_cheatsheet)
@@ -15,4 +17,4 @@ If you want to run the documentation locally, you should have `yarn` installed. 
 ```bash
 yarn install   # install the lib
 yarn docs:dev  # run the documentation
-``` 
+```
