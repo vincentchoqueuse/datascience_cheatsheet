@@ -75,3 +75,43 @@ that allows to easily see what route, view and SQL was used for requests.
 It adds a sidebar to every HTML page that includes a `</body>` tag.
 
 To get debug information about pages without a closing `</body>` tag, you can use the history tab in the toolbar of another page running on the same development server.
+
+
+### Create a model
+
+Every model class corresponds to a table in your database.
+A primary key is created automatically, named `id` and of type `BigIntegerField`.
+It is used for relations created with `ForeignKey`, `OneToOneField` and `ManyToManyField`.
+
+A simple model looks like this:
+
+```python
+from django.db import models
+
+class Book(models.Model):
+    # define the fields here
+    title = models.CharField(max_length=255)
+    page_count = models.PositiveIntegerField()
+    price = models.DecimalField(max_digits=10, decimal_places=2, null=True)
+    personal_comment = models.TextField(blank=True)
+```
+
+`DecimalField` are nice to get exact fractional values that cannot be represented by floating point numbers.
+They are fixed point numbers and require the decimal place to be fixed in place.
+
+The `null` parameter is `False` by default.
+To allow the value to be a SQL `NULL`, aka python's `None`, you need to add `null=True` to the field definition.
+
+For textual fields, the `blank` parameter allows the value to be the empty string, it is `False` by default.
+It is not recommended to use both `null=True` and `blank=True` on a field as there are then two representation of "empty" for that field, which makes it harder to query for empty values.
+
+**After editing any model** you need to create the migration files by running:
+```bash
+./manage.py makemigrations
+```
+
+You then need to apply all created migrations to the database by running the following command:
+
+```bash
+./manage.py migrate
+```
