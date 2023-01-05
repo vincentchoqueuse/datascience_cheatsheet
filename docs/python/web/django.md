@@ -22,7 +22,7 @@ that provides tools to easily define a REST API without much more code than the 
 To create a `mysite` project, run : 
 
 ```bash
-$ django-admin startproject mysite
+django-admin startproject mysite
 ```
 
 This command will create the following directory structure :
@@ -43,7 +43,7 @@ mysite/
 To create a `polls` app, run in the `mysite` folder :
 
 ```bash
-$ python manage.py startapp polls
+./manage.py startapp polls
 ```
 
 This command will create the following directory structure  :
@@ -65,7 +65,7 @@ polls/
 ### Run development Server 
 
 ```bash 
-$ python manage.py runserver
+./manage.py runserver
 ```
 
 This launches a development server at <a href="http://localhost:8000/" target="_blank" rel="noreferrer">http://localhost:8000/</a> by default.
