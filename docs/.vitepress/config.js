@@ -49,19 +49,21 @@ export default {
                   collapsed: false,
                   items: [
                     { text: 'Basics', link: '/python/' },
-                    { text: 'Read/Write Files', link: '/python/files' }
+                    { text: 'Read/Write Files', link: '/python/files' },
+                    { text: 'OS interface', link: '/python/os_interface'},
+                    { text: 'Documentation', link: '/python/sphinx' }
                   ]
                 },
                 {
-                  text: 'Scientific Stack',
+                  text: 'Data Science',
                   collapsible: true,
                   collapsed: true,
                   items: [
-                    { text: 'Basics', link: '/python/scientific' },
-                    { text: 'Notebook', link: '/python/notebook' },
-                    { text: 'Seaborn', link: '/python/seaborn' },
-                    { text: 'PyTorch', link: '/python/pytorch' },
-                    { text: 'Python control', link: '/python/control' },
+                    { text: 'Introduction', link: '/python/data_science/index' },    
+                    { text: 'Jupyter', link: '/python/data_science/notebook' }, 
+                    { text: 'Seaborn', link: '/python/data_science/seaborn' },
+                    { text: 'Scikit Learn', link: '/python/data_science/scikit' },
+                    { text: 'PyTorch', link: '/python/data_science/pytorch' } 
                   ]
                 },
                 {
@@ -69,19 +71,20 @@ export default {
                   collapsible: true,
                   collapsed: true,
                   items: [
-                    { text: 'Jinja', link: '/python/jinja' },
-                    { text: 'Django', link: '/python/django' },
-                    { text: 'Flask', link: '/python/flask' }
+                    { text: 'Introduction', link: '/python/web/index' },
+                    { text: 'Jinja', link: '/python/web/jinja' },
+                    { text: 'Pelican', link: '/python/web/pelican' },
+                    { text: 'Flask', link: '/python/web/flask' },
+                    { text: 'Django', link: '/python/web/django' }
                   ]
                 },
                 {
-                  text: 'Miscellaneous',
+                  text: 'User Interfaces',
                   collapsible: true,
                   collapsed: true,
                   items: [
-                    { text: 'Tkinter', link: '/python/tkinter' },
-                    { text: 'PyQT', link: '/python/pyqt' },
-                    { text: 'Sphinx', link: '/python/sphinx' }
+                    { text: 'Tkinter', link: '/python/ui/tkinter' },
+                    { text: 'PyQT', link: '/python/ui/pyqt' }
                   ]
                 }
               ],
@@ -104,8 +107,11 @@ export default {
                   collapsible: true,
                   collapsed: true,
                   items: [
-                    { text: 'Bootstrap', link: '/web/bootstrap' },
-                    { text: 'Vue', link: '/web/vue' },
+                    { text: 'Introduction', link: '/web/frontend/index' },
+                    { text: 'Tailwind', link: '/web/frontend/tailwind' },
+                    { text: 'Bootstrap', link: '/web/frontend/bootstrap' },
+                    { text: 'Hugo', link: '/web/frontend/hugo' },
+                    { text: 'Vue', link: '/web/frontend/vue' },
                   ]
                 }
               ]
