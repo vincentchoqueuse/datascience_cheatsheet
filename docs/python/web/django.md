@@ -68,7 +68,7 @@ polls/
 ./manage.py runserver
 ```
 
-This launches a development server at <a href="http://localhost:8000/" target="_blank" rel="noreferrer">http://localhost:8000/</a> by default.
+This launches a development server at `http://localhost:8000/` by default.
 
 A useful tool for development is the [Django debug toolbar](https://django-debug-toolbar.readthedocs.io/en/latest/)
 that allows to easily see what route, view and SQL was used for requests.
