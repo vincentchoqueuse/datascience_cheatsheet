@@ -12,7 +12,7 @@ Other useful tools are [forms](https://docs.djangoproject.com/en/4.1/topics/form
 that define a way to quickly validate data coming from the outside,
 and the [admin site](https://docs.djangoproject.com/en/4.1/ref/contrib/admin/) that allows to easily browse the data contained in the models once configured.
 
-Django can also be used as a backend REST server, usually with the help of [`djangorestframework`](https://www.django-rest-framework.org/)
+Django can also be used as a backend REST server, usually with the help of [Django REST framework](https://www.django-rest-framework.org/)
 that provides tools to easily define a REST API without much more code than the models (if the API is simple).
 
 ## Basic Usage
@@ -115,3 +115,13 @@ You then need to apply all created migrations to the database by running the fol
 ```bash
 ./manage.py migrate
 ```
+
+
+### The Django template engine
+
+Django has its own template engine that is very similar to Jinja.
+See the Jinja cheatsheet for more info about the template syntax.
+
+Some features from Jinja are not available, notably the ability to remove whitespace before and after jinja tags with the `-` prefix/suffix.
+It is possible to use the Jinja engine instead of the Django engine by changing [the template configuration](https://docs.djangoproject.com/en/4.1/ref/settings/#templates) in the settings.
+
