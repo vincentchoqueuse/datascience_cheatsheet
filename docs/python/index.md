@@ -56,7 +56,6 @@ while spam < 5:
 Functions and Procedures are specified using the `def` keyword. 
 
 ```python
-
 def say_hello(name):
     message = "Hi, {} !".format(name)
     print(message)
@@ -67,7 +66,6 @@ say_hello("Homer")
 ### Optional Argument
 
 ```python
-
 def say_hello(name="Homer"):
     message = "Hi, {} !".format(name)
     print(message)
@@ -79,7 +77,6 @@ say_hello("Marge")
 ### Return Values
 
 ```python
-
 def write_message(name):
     message = "Hi, {} !".format(name)
     return message
