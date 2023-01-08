@@ -116,6 +116,72 @@ You then need to apply all created migrations to the database by running the fol
 ./manage.py migrate
 ```
 
+### Foreign keys
+
+When referencing a model in another model, one might use a foreign key field. In the following example, Authors write Articles, Articles are created in different Categories, and Comments are made to Articles.
+
+```python
+class Author(models.Model):
+    name = models.CharField(max_length=255)
+
+class Category(models.Model):
+    title = models.CharField(max_length=255)
+
+class Article(models.Model):
+    title = models.CharField(max_length=255)
+    category = models.ForeignKey(Category, on_delete=models.PROTECT)
+    author = models.ForeignKey(Category, null=True on_delete=models.SET_NULL)
+
+class Comment(models.Model):
+    content = models.CharField(max_length=255)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+```
+
+We expect different behaviors when the referenced object is deleted.
+
+- `SET_NULL` : When an `Author` is deleted, we want to keep any article referencing that author as an authorless article. The `Article` author field is set to `null`, indicating an unknown author.
+- `CASCADE` : When an `Article` is deleted, the associated comments are meaningless : any `Comment` referencing this article therefore self-destructs.
+- `PROTECT` : When a category is deleted, any `Article` referencing this `Category` will **prevent** the deletion of the said category.
+
+[More actions](https://docs.djangoproject.com/en/4.1/ref/models/fields/#django.db.models.ForeignKey.on_delete) are possible for more specific situations.
+
+### Simple Lookups
+
+Django `filter` method take one or more [Field lookup](https://docs.djangoproject.com/en/3.0/ref/models/querysets/#field-lookups) as an argument.
+
+> *From django docs* : Multiple parameters are joined via AND in the underlying SQL statement.
+
+```python
+Book.objects.filter(price=12.56)  # price == 12.56
+Book.objects.filter(price__range=(10, 15))  # 10 <= price <= 15
+Book.objects.filter(price__gte=15)  # price <= 15
+
+# price > 15, and no title ending with a question mark
+Book.objects.filter(price__lt=15).exclude(title__endswith="?")
+
+# price > 10 AND price < 15
+Book.objects.filter(price__gt=10, price__lt=15)
+
+# Title contains "nuit", case insensitive.
+Book.objects.filter(title__icontains="nuit") 
+```
+
+### More complex lookups
+
+Using [Q objects](https://docs.djangoproject.com/en/3.0/topics/db/queries/#complex-lookups-with-q) is the recommended way of doing more complex lookups.
+
+```python
+
+# A cheap book (price<3) OR a small book (page_count<50)
+# That starts with "The tales of..."
+
+Book.objects.filter(
+    Q(page_count__lt=50) | Q(price__lt=2),
+    title__startswith="The tales of"
+)
+```
+
+> *From django docs* : Lookup functions can mix the use of Q objects and keyword arguments. All arguments provided to a lookup function (be they keyword arguments or Q objects) are “AND”ed together. However, if a Q object is provided, it must precede the definition of any keyword arguments.
 
 ### The Django template engine
 

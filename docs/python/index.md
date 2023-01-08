@@ -87,7 +87,7 @@ print(message)
 
 ## Import a library 
 
-You can import a library or jus
+You can import a whole library or only part of it, by specifying which components to import.
 ``` python 
 import math # or
 import math as ma # or
