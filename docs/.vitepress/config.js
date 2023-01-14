@@ -59,7 +59,10 @@ export default {
                   collapsible: true,
                   collapsed: true,
                   items: [
-                    { text: 'Introduction', link: '/python/data_science/index' },    
+                    { text: 'Introduction', link: '/python/data_science/index' },
+                    { text: 'Numpy', link: '/python/data_science/numpy' },
+                    { text: 'Scipy', link: '/python/data_science/scipy' },  
+                    { text: 'Matplotlib', link: '/python/data_science/matplotlib' },      
                     { text: 'Jupyter', link: '/python/data_science/notebook' }, 
                     { text: 'Seaborn', link: '/python/data_science/seaborn' },
                     { text: 'Scikit Learn', link: '/python/data_science/scikit' },

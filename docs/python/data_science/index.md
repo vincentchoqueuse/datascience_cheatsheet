@@ -1,24 +1,5 @@
 # Basics
 
-## Numpy
-
-NumPy is a library that adds support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays
-
-* [Documentation](https://numpy.org/doc/stable/reference/index.html)
-
-### Import
-
-```python 
-import numpy as np
-```
-
-## Scipy
-
-
-SciPy is a free open-source library used for scientific computing and technical computing. SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering.
-
-* [Documentation](https://docs.scipy.org/doc/scipy/reference/index.html)
-
 
 ## Matplotlib
 
