@@ -6,6 +6,11 @@ export default {
     themeConfig: {
         logo: '/ENIB.svg',
         outline: 'deep',
+        algolia: {
+          appId: '87M8I4HHOT',
+          apiKey: '8514ac0791daff7acf6ccdf280bc25da',
+          indexName: 'cheatsheet'
+        },
         footer: {
           message: 'Released under the MIT License.',
           copyright: 'Copyright © 2022-present'
