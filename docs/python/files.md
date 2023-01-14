@@ -48,6 +48,28 @@ with open("filename.json", "w") as file:
     json.dump(content, file, indent=4)
 ```
 
+## TOML
+
+
+### Reading
+
+```python
+import toml
+
+with open("filename.toml") as file:
+    content = toml.load(file)
+```
+
+### Writing
+
+```python
+import toml
+
+content = {"name": "Joe", "age": 20}
+with open("filename.toml", "w") as file:
+    toml.dump(content, file)
+```
+
 ## YAML
 
 
