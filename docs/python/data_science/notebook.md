@@ -1,1 +1,5 @@
 # Jupyter Notebook
+
+Jupyter Notebook is an open-source web-based interactive computing environment for creating, editing, and sharing documents that contain live code, equations, visualizations, and narrative text. It is used for data analysis, scientific research, and teaching. The name "Jupyter" is a combination of the three core programming languages it supports: Julia, Python, and R.
+
+Jupyter Notebook allows users to write and run code in cells, which are interactive code blocks that can be executed individually or as a group. Users can also write markdown cells to add text, headings, and other formatted content to the notebook. Notebooks can be saved and shared as .ipynb files or exported to various formats, including HTML, PDF, and LaTeX.Additionally, it offers various extensions and widgets that enhance the functionality of the notebook, such as interactive data visualizations, code snippets, and data exploration tools.

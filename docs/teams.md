@@ -44,7 +44,7 @@ const members = [
     ]
   },
   {
-    avatar: 'https://git.enib.fr/uploads/-/system/user/avatar/527/avatar.png?width=96',
+    avatar: 'https://avatars.githubusercontent.com/u/69155487?v=4',
     name: 'Ulysse Moreau',
     title: 'Contributor',
     links: [

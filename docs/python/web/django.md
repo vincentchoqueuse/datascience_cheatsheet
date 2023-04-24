@@ -1,8 +1,16 @@
 # Django 
 
-Django is a free and open-source, web framework that follows the model–template–views (MTV) architectural pattern.
+Django is a high-level Python web framework used for building web applications quickly and easily. It provides a variety of tools and libraries for handling common web development tasks, such as managing databases, handling user authentication and permissions, and handling requests and responses.
+
+Django follows the Model-View-Controller (MVC) architectural pattern, and provides an Object-Relational Mapping (ORM) system that allows developers to work with databases using Python objects. This makes it easy to create and manage databases and data models in web applications.
+
+Django also includes a variety of built-in tools for handling common web development tasks, such as managing user authentication and permissions, handling forms and input validation, and handling static and media files. It also includes a powerful templating system that makes it easy to create dynamic and responsive web pages.
+
+Django is a popular choice for web development in Python due to its ease of use, flexibility, and powerful features. It is used by many organizations and companies for building web applications, from small startups to large-scale enterprise applications.
 
 * [Documentation](https://docs.djangoproject.com/)
+
+## MTV architecture
 
 In a model-template-views pattern as used in Django,
 the [model](https://docs.djangoproject.com/en/4.1/topics/db/) is used to interact with a database,
@@ -14,6 +22,7 @@ and the [admin site](https://docs.djangoproject.com/en/4.1/ref/contrib/admin/) t
 
 Django can also be used as a backend REST server, usually with the help of [Django REST framework](https://www.django-rest-framework.org/)
 that provides tools to easily define a REST API without much more code than the models (if the API is simple).
+
 
 ## Basic Usage
 

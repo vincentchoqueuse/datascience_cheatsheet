@@ -1,6 +1,14 @@
 # Flask
 
-Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+Flask is a lightweight Python web framework used for building web applications quickly and easily. It provides a minimalistic and flexible approach to web development, and is often used for small to medium-sized web applications and prototypes.
+
+Flask follows a microframework approach, meaning that it provides only the basic functionality needed for web development, such as request handling and routing, while leaving more advanced features to extensions and external libraries. This makes Flask highly customizable and extensible, and allows developers to choose the tools and libraries they want to use for a specific project.
+
+Flask includes a built-in development server, as well as a variety of tools and libraries for handling common web development tasks, such as handling request and response data, working with cookies and sessions, and managing databases. It also includes a powerful templating engine that allows for easy creation of dynamic and responsive web pages.
+
+Flask is a popular choice for web development in Python due to its simplicity, flexibility, and extensibility. It is often used for small to medium-sized web applications and prototypes, and can be easily scaled up as needed using extensions and external libraries.
+
+
 
 * [Documentation](https://flask.palletsprojects.com/)
 
@@ -146,7 +154,7 @@ you should see the icon next to your tab title.
 
 ## Jinja Template Engine
 
-In practice, the content of an HTML page usually depends on some python variables. Instead of manually creating the HTML page from scratch using Python, it is quite common to use a template engine such as `Jinja` (see [Cheatsheet](/python/web/jinja) )
+In practice, the content of an HTML page usually depends on some python variables. Instead of manually creating the HTML page from scratch using Python, it is common to use a template engine such as `Jinja2` (see [Cheatsheet](/python/web/jinja) ).
 
 ### Basis Usage
 
@@ -201,15 +209,26 @@ Web pages can contain forms that are processed at the server side. The classical
 4. The content of the form is then transmitted at the server side using the POST method,
 5. The server replies by transmitting a new HTML page.
 
-In Flask, this process can be simplified using the `flask_wtf` module.
+In Flask, this process can be simplified using the `Flask-WTF` library.
+
+### Flask-WTF
+
+Flask-WTF is a Python library that provides integration between the Flask web framework and the WTForms library for form validation and rendering. WTForms is a flexible forms validation and rendering library for Python web development that allows you to define and validate HTML forms in Python code.
+
+Flask-WTF extends the WTForms library by providing additional functionality specifically for Flask, such as support for CSRF protection, file uploads, and server-side validation of forms. It also simplifies the integration of WTForms with Flask by providing a wrapper class FlaskForm that allows you to define forms as Python classes, and then use them in your Flask routes.
+
+With Flask-WTF, you can easily create forms in Flask, define fields, and validate user inputs on the server-side before processing the data. It also includes support for rendering forms in templates using Jinja2, Flask's default template engine.
+
+
+* [Documentation](https://flask-wtf.readthedocs.io/en/1.0.x/)
+
+#### Installation
 
 ```bash
 pip install flask-wtf
 ```
 
-* [Documentation](https://flask-wtf.readthedocs.io/en/1.0.x/)
-
-### Basis Usage
+#### Basis Usage
 
 
 ::: code-group
@@ -269,7 +288,17 @@ class UserForm(FlaskForm):
 :::
 
 
-## SQL ALchemy ORM
+## SQL Alchemy ORM
+
+SQLAlchemy ORM (Object-Relational Mapping) is a Python library that provides a high-level interface for interacting with SQL databases. It allows developers to define database schema and relationships using Python classes and objects, which are then translated into SQL commands that can be executed against the database.
+
+The ORM provides a set of tools for working with relational databases in a more object-oriented way, making it easier to manipulate data and work with complex relationships between tables. The key features of SQLAlchemy ORM include:
+
+Declarative syntax for defining database schema and relationships using Python classes and objects.
+Ability to work with multiple database engines, including SQLite, PostgreSQL, MySQL, and Oracle.
+Automatic generation of SQL commands for common database operations such as inserts, updates, and deletes.
+Support for lazy loading and caching of related data to improve performance.
+Integration with popular Python web frameworks such as Flask and Django.
 
 ### Installation
 
