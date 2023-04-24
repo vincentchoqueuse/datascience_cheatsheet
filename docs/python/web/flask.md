@@ -146,7 +146,7 @@ you should see the icon next to your tab title.
 
 ## Jinja Template Engine
 
-In practice, the content of an HTML page usually depends on some python variables. Instead of manually creating the HTML page from scratch using Python, it is quite common to use a template engine such as `Jinja`
+In practice, the content of an HTML page usually depends on some python variables. Instead of manually creating the HTML page from scratch using Python, it is quite common to use a template engine such as `Jinja` (see [Cheatsheet](/python/web/jinja) )
 
 ### Basis Usage
 
@@ -190,9 +190,83 @@ def index_user(id):
 
 Run your app with `flask run`, open a browser and type the URL `http://127.0.0.1:5000/user/1998`. You will see the message `Hello World from user 1998`.
 
-### Documentation
 
-* [Cheatsheet](/python/web/jinja)
+## Form Management
+
+Web pages can contain forms that are processed at the server side. The classical scenario includes 5 steps : 
+
+1. The user requests an HTML page using the GET method,
+2. The server transmits the requested HTML page that contains an empty form,
+3. The user completes the form and then clicks on a submit button,
+4. The content of the form is then transmitted at the server side using the POST method,
+5. The server replies by transmitting a new HTML page.
+
+In Flask, this process can be simplified using the `flask_wtf` module.
+
+```bash
+pip install flask-wtf
+```
+
+* [Documentation](https://flask-wtf.readthedocs.io/en/1.0.x/)
+
+### Basis Usage
+
+
+::: code-group
+```python [app.py]
+from flask import Flask, render_template
+from forms import UserForm
+import os
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = os.urandom(32)
+
+@app.route('/', methods=('GET', 'POST'))
+def index():
+    form = UserForm()
+    if form.validate_on_submit():
+        username = "{} {}".format(form.firstname.data, form.lastname.data)
+    else:
+        username = "anonymous"
+
+    return render_template('index.html', form=form, username=username)
+```
+```python [forms.py]
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+
+class UserForm(FlaskForm):
+    """Contact form."""
+    firstname = StringField('Name', [DataRequired()])
+    lastname = StringField('Email', [DataRequired()])
+    submit = SubmitField('Submit')
+```
+```html [templates/index.html]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+</head>
+
+<body>
+    <p>Hello {{username}}</p>
+
+    <form method="POST" action="/">
+    {{ form.csrf_token }}
+    {{ form.firstname.label }} {{ form.firstname(size=20) }}
+    {{ form.lastname.label }} {{ form.lastname(size=20) }}
+    <input type="submit" value="Go">
+    </form>
+</body>
+
+</html>
+```
+:::
 
 
 ## SQL ALchemy ORM
