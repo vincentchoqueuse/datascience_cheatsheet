@@ -25,6 +25,8 @@ my_variable = "Hello, world!"
 print(my_variable)
 ```
 
+> Quick tip: use the `pprint()` function from the `pprint` package to pretty print dicts. You can import it using this import directive `from pprint import pprint`.
+
 ### Format Message
 
 It is common to use the `format()` method with the `print()` function in Python. The `format()` method allows you to insert values into a string dynamically, which is useful for generating output that includes variable data.
@@ -38,7 +40,17 @@ age = 25
 print("My name is {} and I am {} years old.".format(name, age))
 ```
 
+#### f-strings
 
+It is also possible to use what's called "f-strings" in recent versions of Python. Instead of using the `format()` function as shown before, prepend the first double quote with `f` and write the value to be inserted directly in the curly braces.
+
+
+```python
+name = "Alice"
+age = 25
+
+print(f"My name is {name} and I am {age} years old.")
+```
 
 ## Control Flow
 
