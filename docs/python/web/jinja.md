@@ -46,10 +46,14 @@ print(content)
 
 ##  Variable Filters
 
+In Jinja2, variable filters are a feature that allows you to modify the value of a variable before it is displayed in a template. Variable filters are applied to a variable by appending a pipe symbol | to the variable, followed by the name of the filter and any arguments.
+
 ```html
 {{ message | upper  }}
 ```
   
+Jinja2 comes with many built-in filters, such as capitalize, lower, upper, truncate, and safe. You can also define your own custom filters by creating a Python function and registering it with Jinja2.
+
 ## if Statements
 
 ```html
@@ -65,6 +69,14 @@ Kenavo
 ```html
 {% for my_item in my_list %}
 <li>my_item</li>
+{% endfor %}
+```
+
+You can access the index of a loop iteration using the `loop.index` variable.
+
+```html
+{% for my_item in my_list %}
+<li>my_item {{loop.index}}</li>
 {% endfor %}
 ```
 

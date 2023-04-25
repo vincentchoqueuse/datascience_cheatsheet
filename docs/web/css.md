@@ -1,6 +1,6 @@
 # CSS
 
-Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML.
+CSS (Cascading Style Sheets) is a programming language used to style and format HTML documents. It is used to control the layout, typography, colors, and other visual aspects of a web page. CSS works by targeting specific HTML elements in a document and applying style rules to those elements. With CSS, web developers can create visually appealing and engaging websites that are easy to navigate and interact with. CSS can be written inline, in a separate file, or in a style block within an HTML document. It is a critical tool for web developers and designers, as it allows them to create consistent and professional-looking websites.
 
 * [Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
 

@@ -74,7 +74,7 @@ my_array = np.array([2, 12, 3, 4], dtype = np.complex)
 You can also convert a list of lists into a 2D array
 
 ```python 
-my_array = np.array([[2, 12, 3, 4],[1, 4, 3, 2]])
+my_array = np.array([[2, 12, 3, 4], [1, 4, 3, 2]])
 ```
 
 
@@ -96,7 +96,7 @@ This syntax creates an empty 2D array with 3 rows and 4 columns filled with zero
 #### Array filled with ones
 
 ```python 
-my_array = np.ones((3,4))
+my_array = np.ones((3, 4))
 #[[1. 1. 1. 1.]
 # [1. 1. 1. 1.]
 # [1. 1. 1. 1.]]
@@ -162,7 +162,7 @@ This syntax creates a 1D array of 5 evenly spaced values generated within the in
 Let us consider the following array 
 
 ```python 
-my_array = np.ones((3,4))
+my_array = np.ones((3, 4))
 ```
 
 ### Shape, dimensions and size

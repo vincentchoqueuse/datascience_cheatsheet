@@ -1,7 +1,3 @@
----
-outline: 2
----
-
 # Plotly
 
 Plotly is a web-based data visualization library that allows users to create interactive and dynamic graphs, charts, and dashboards. It provides a user-friendly interface for creating a variety of data visualizations including line charts, scatter plots, bar charts, pie charts, heatmaps, and more.
@@ -72,7 +68,7 @@ fig.show()
 
 ## Layout Customization
 
-You can customize the plot by calling the `update_layout` method of the Figure object.
+The `update_layout()` method allows to customize the layout of the plot, including adding a title, axis labels, and adjusting the font and tick marks. 
 
 ```python
 # Create a plot
@@ -85,9 +81,46 @@ fig.update_layout(xaxis_title='time [s]', yaxis_title='sinewave')
 ...
 ```
 
-## Classical Plots
+## Copy & Paste Plots
 
-### Time response of LTI systems
+### Analysis of LTI systems
+
+#### Poles and Zeros Diagram
+
+```python
+import plotly.graph_objects as go
+from scipy.signal import lti
+
+# create data
+sys = lti([-0.5, 1], [1, 1, 1])
+poles = sys.poles
+zeros = sys.zeros
+
+# create plot
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=poles.real, 
+                        y=poles.imag,
+                        mode='markers',
+                        marker_symbol='x',
+                        marker_size=15,
+                        name="poles"
+                        ))
+fig.add_trace(go.Scatter(x=zeros.real, 
+                         y=zeros.imag, 
+                         mode='markers',
+                         marker_symbol='circle',
+                         marker_size=15,
+                         name="zeros"
+                         ))
+
+# update axes (name / type)
+fig.update_xaxes(title_text="Real Part")
+fig.update_yaxes(title_text="Imag Part")
+
+fig.show()
+```
+
+#### Time response
 
 ```python
 import plotly.graph_objects as go
@@ -108,9 +141,7 @@ fig.update_xaxes(title_text="time [s]")
 fig.show()
 ```
 
-
-### Bode Plot
-
+#### Bode Plot
 
 ```python
 import plotly.graph_objects as go

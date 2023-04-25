@@ -1,6 +1,10 @@
 # Vue 
 
-Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.
+Vue.js is a progressive JavaScript framework used for building user interfaces. It was created by Evan You in 2014 and has gained popularity among developers for its simplicity, flexibility, and ease of integration with other libraries or existing projects.
+
+Vue.js allows developers to declaratively render and manipulate the DOM, using a reactive data model and a component-based architecture. This makes it easier to build complex applications with reusable and customizable components, as well as to manage state and handle user input.
+
+Vue.js also offers features such as directives, computed properties, filters, and watchers, which allow for more efficient and organized code. Additionally, it has a small size and can be easily integrated with other tools and libraries, making it a popular choice for web development.
 
 * [Documentation](https://vuejs.org/guide/introduction.html)
 

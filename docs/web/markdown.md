@@ -1,6 +1,10 @@
 # Markdown
 
-Markdown is a lightweight markup language for creating formatted text using a plain-text editor.
+Markdown is a lightweight markup language that is used to format text and create structured documents. It was created as a simple way to write content for the web, without having to use HTML.
+
+Markdown uses a simple syntax of characters and symbols to indicate formatting, such as using asterisks to denote bold text or using hyphens to create bullet points. This makes it easy to create structured documents without having to worry about the complexities of HTML or other markup languages.
+
+Markdown is widely used on the web, particularly for writing documentation, blog posts, and other types of content. It is supported by a wide range of applications and platforms, including Jupyter, GitHub, Stack Overflow, and various blogging platforms.
 
 ## Headers
 
@@ -52,7 +56,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ## Images
 
 ``` markdown
-![my image](mu_url.png "Logo Title Text 1")
+![my image](my_url.png "Logo Title Text 1")
 ```
 
 ## Code 

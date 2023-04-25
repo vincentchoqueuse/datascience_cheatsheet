@@ -1,7 +1,10 @@
 # Sphinx
 
-Sphinx is a documentation generator written and used by the Python community.
+Sphinx is a powerful documentation generator tool that allows you to create high-quality documentation for your projects in various formats such as HTML, PDF, EPUB, and more. It is written in Python and is often used to document Python projects, although it can be used with other programming languages as well.
 
+Sphinx uses reStructuredText as its markup language, which is easy to read and write and can be easily converted into other formats. It also supports a range of extensions that provide additional functionality, such as automatically generating documentation from code comments, cross-referencing between different parts of the documentation, and more.
+
+Sphinx also has built-in support for internationalization, which allows you to easily create documentation in multiple languages. It provides a variety of themes that you can use to customize the look and feel of your documentation, and it integrates well with version control systems like Git and Subversion.
 * [Documentation](https://www.sphinx-doc.org/en/master/)
 
 
