@@ -1,5 +1,7 @@
 # JavaScript
 
+* [Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 JavaScript is a high-level programming language that is commonly used to add interactivity and dynamic behavior to web pages.
 
 JavaScript is a client-side language, meaning it is executed by the user's web browser, rather than on a web server. This allows JavaScript to be used to create interactive user interfaces and dynamic web pages, without requiring a round-trip to the server for every user action.
@@ -8,7 +10,6 @@ JavaScript is used to add functionality to web pages, such as validating form da
 
 In addition to its use in web development, JavaScript can also be used in other environments, such as server-side with Node.js, or in desktop and mobile applications using frameworks like Electron and React Native.
 
-* [Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Getting Started
 

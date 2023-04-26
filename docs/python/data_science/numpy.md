@@ -1,14 +1,12 @@
----
-outline: 2
----
-
 # Numpy
+
+* [Documentation](https://numpy.org/doc/stable/reference/index.html)
+
 
 NumPy (Numerical Python) is a Python library used for working with arrays and numerical operations. It provides a powerful N-dimensional array object, and a variety of functions and tools for working with these arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, and more.
 
 NumPy arrays are efficient and fast, and allow for vectorized operations which can speed up calculations significantly. This makes NumPy a popular library for scientific computing and data analysis in Python. In addition, NumPy can be used in conjunction with other Python libraries for data manipulation and analysis, such as Pandas and Matplotlib.
 
-* [Documentation](https://numpy.org/doc/stable/reference/index.html)
 
 ## Getting Started
 

@@ -1,8 +1,9 @@
 # Matplotlib
 
+* [Documentation](https://matplotlib.org/stable/index.html)
+
 Matplotlib is a Python data visualization library used to create high-quality static, animated, and interactive visualizations in Python. It is one of the most widely used libraries for data visualization in Python and provides a variety of tools for creating a wide range of visualizations such as line plots, scatter plots, bar plots, histograms, and more. Matplotlib allows users to create publication-quality visualizations with a minimal amount of code, and also provides a great deal of customization options for more advanced users. The library is highly extensible and can be integrated with other Python libraries, making it a powerful tool for data visualization and analysis.
 
-* [Documentation](https://matplotlib.org/stable/index.html)
 
 
 ## Basic Usage

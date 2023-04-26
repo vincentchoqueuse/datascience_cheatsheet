@@ -1,7 +1,9 @@
 # Bootstrap
 
-Bootstrap is an open-source front-end web development framework that allows developers to create responsive and mobile-first websites. Bootstrap is built using HTML, CSS, and JavaScript and provides pre-built CSS classes and JavaScript plugins to create commonly used components such as navigation bars, forms, buttons, and modals. Bootstrap uses a 12-column grid system that allows developers to create flexible and responsive layouts for different screen sizes. Bootstrap is known for its ease of use, customization options, and extensive documentation, making it a popular choice for developers who want to create modern and professional-looking websites quickly and efficiently.
 * [Documentation](https://getbootstrap.com)
+
+Bootstrap is an open-source front-end web development framework that allows developers to create responsive and mobile-first websites. Bootstrap is built using HTML, CSS, and JavaScript and provides pre-built CSS classes and JavaScript plugins to create commonly used components such as navigation bars, forms, buttons, and modals. Bootstrap uses a 12-column grid system that allows developers to create flexible and responsive layouts for different screen sizes. Bootstrap is known for its ease of use, customization options, and extensive documentation, making it a popular choice for developers who want to create modern and professional-looking websites quickly and efficiently.
+
 
 ## Starter Template
 

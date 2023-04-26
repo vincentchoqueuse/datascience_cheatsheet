@@ -1,13 +1,11 @@
 # Plotly
 
+* [Documentation](https://plotly.com/python-api-reference/)
+
+
 Plotly is a web-based data visualization library that allows users to create interactive and dynamic graphs, charts, and dashboards. It provides a user-friendly interface for creating a variety of data visualizations including line charts, scatter plots, bar charts, pie charts, heatmaps, and more.
 
 With Plotly, users can easily manipulate and customize their visualizations with a drag-and-drop interface, and the ability to zoom, pan, and hover over data points to display more information. Plotly supports a variety of programming languages including Python, R, JavaScript, and MATLAB, making it a versatile tool for data scientists and developers. 
-
-In this page, we present the Python warper for the Plotly library.
-
-* [Documentation](https://plotly.com/python-api-reference/)
-
 
 ## Installation
 

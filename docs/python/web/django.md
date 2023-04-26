@@ -1,5 +1,7 @@
 # Django 
 
+* [Documentation](https://docs.djangoproject.com/)
+
 Django is a high-level Python web framework used for building web applications quickly and easily. It provides a variety of tools and libraries for handling common web development tasks, such as managing databases, handling user authentication and permissions, and handling requests and responses.
 
 Django follows the Model-View-Controller (MVC) architectural pattern, and provides an Object-Relational Mapping (ORM) system that allows developers to work with databases using Python objects. This makes it easy to create and manage databases and data models in web applications.
@@ -8,7 +10,6 @@ Django also includes a variety of built-in tools for handling common web develop
 
 Django is a popular choice for web development in Python due to its ease of use, flexibility, and powerful features. It is used by many organizations and companies for building web applications, from small startups to large-scale enterprise applications.
 
-* [Documentation](https://docs.djangoproject.com/)
 
 ## MTV architecture
 

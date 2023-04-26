@@ -1,5 +1,7 @@
 # Flask
 
+* [Documentation](https://flask.palletsprojects.com/)
+
 Flask is a lightweight Python web framework used for building web applications quickly and easily. It provides a minimalistic and flexible approach to web development, and is often used for small to medium-sized web applications and prototypes.
 
 Flask follows a microframework approach, meaning that it provides only the basic functionality needed for web development, such as request handling and routing, while leaving more advanced features to extensions and external libraries. This makes Flask highly customizable and extensible, and allows developers to choose the tools and libraries they want to use for a specific project.
@@ -10,17 +12,16 @@ Flask is a popular choice for web development in Python due to its simplicity, f
 
 
 
-* [Documentation](https://flask.palletsprojects.com/)
 
 
-## Simple Application
-
-### Installation
+## Installation
 
 Use the following command to install Flask:
 ```bash
 pip install Flask
 ```
+
+## Getting Started
 
 Create a `my_flask_project` directory : 
 ```bash
@@ -28,7 +29,7 @@ mkdir my_flask_project
 cd my_flask_project
 ```
 
-### Basic Usage
+### Basis Usage
 
 This `app.py` file will serve as a minimal example of how to handle HTTP requests. Inside it, you need to import the [Flask object](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Flask), and create a function that returns an HTTP response.
 
@@ -55,7 +56,7 @@ flask run
 
 Open a browser and type in the URL `http://127.0.0.1:5000/`, you will see the string `Hello, World!` as a response, this confirms that your application is successfully running.
 
-### Using static HTML
+### Render HTML
 
 First create a `templates` directory that will contain all your `.html` files.
 
@@ -116,7 +117,7 @@ flask run # 127.0.0.1:5000
 ```
 you should see the message `Hello World from index.html`.
 
-### Using static files
+### Using Static files
 
 After following the [previous section](#using-html-templates), create a `static` directory that will contain all your static files.
 ```bash
@@ -209,26 +210,18 @@ Web pages can contain forms that are processed at the server side. The classical
 4. The content of the form is then transmitted at the server side using the POST method,
 5. The server replies by transmitting a new HTML page.
 
-In Flask, this process can be simplified using the `Flask-WTF` library.
-
-### Flask-WTF
-
-Flask-WTF is a Python library that provides integration between the Flask web framework and the WTForms library for form validation and rendering. WTForms is a flexible forms validation and rendering library for Python web development that allows you to define and validate HTML forms in Python code.
-
-Flask-WTF extends the WTForms library by providing additional functionality specifically for Flask, such as support for CSRF protection, file uploads, and server-side validation of forms. It also simplifies the integration of WTForms with Flask by providing a wrapper class FlaskForm that allows you to define forms as Python classes, and then use them in your Flask routes.
-
-With Flask-WTF, you can easily create forms in Flask, define fields, and validate user inputs on the server-side before processing the data. It also includes support for rendering forms in templates using Jinja2, Flask's default template engine.
+In Flask, this process can be simplified using the `Flask-WTF` library. With Flask-WTF, you can easily create forms in Flask, define fields, and validate user inputs on the server-side before processing the data. It also includes support for rendering forms in templates using Jinja2, Flask's default template engine.
 
 
 * [Documentation](https://flask-wtf.readthedocs.io/en/1.0.x/)
 
-#### Installation
+### Installation
 
 ```bash
 pip install flask-wtf
 ```
 
-#### Basis Usage
+### Basis Usage
 
 
 ::: code-group

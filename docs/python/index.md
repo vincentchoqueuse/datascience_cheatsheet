@@ -1,12 +1,13 @@
 # Python
 
+* [Documentation](https://docs.python.org/3/)
+
 Python is a high-level, interpreted programming language. It is designed to be easy to read and write, with a syntax that emphasizes code readability and simplicity. Python is used for a wide range of applications, including web development, scientific computing, data analysis, and artificial intelligence.
 
 Python is an object-oriented language, which means that it uses objects to represent data and functions. It includes a large standard library with many modules for common tasks, as well as many third-party libraries for specialized applications.
 
 Python is known for its ease of use and its focus on code readability, which makes it a popular choice for beginners and experienced programmers alike. It is also highly portable, running on many different platforms and operating systems.
 
-* [Documentation](https://docs.python.org/3/)
 
 
 ## Print 

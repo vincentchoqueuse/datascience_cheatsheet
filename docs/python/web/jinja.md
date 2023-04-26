@@ -1,5 +1,7 @@
 # Jinja
 
+* [Documentation](https://jinja.palletsprojects.com/)
+
 Jinja2 is a popular template engine for Python web applications that allows developers to generate dynamic HTML, XML, or other markup documents using templates. It is widely used in popular Python web frameworks such as Flask, Django, and Pyramid. Jinja2 uses a template language that is designed to be easy to read and write, with syntax that is similar to other programming languages like Python. It allows developers to define templates that contain placeholders for dynamic data, which can be filled in at runtime with values from Python code.
 
 Some of the key features of Jinja2 include:
@@ -12,13 +14,29 @@ Some of the key features of Jinja2 include:
 Jinja2 is a powerful and flexible template engine that makes it easy to create dynamic web pages in Python web applications. It is widely used and well-documented, making it a popular choice for many web developers.
 
 
-* [Documentation](https://jinja.palletsprojects.com/)
-
-
 ## Starter Template
 
+### Project structure
 
-```html
+```
+.
+├── app.py
+└── templates
+    └── index.html
+```
+
+::: code-group
+
+```python [app.py]
+from jinja2 import Environment, FileSystemLoader
+
+env = Environment(loader=FileSystemLoader('templates')) # loading the jinja2 environment
+template = env.get_template("index.html")
+content = template.render(message = "Hello World !")
+print(content)
+```
+
+```html [templates/index.html]
 # index.html
 <!DOCTYPE html>
 <html lang="en">
@@ -31,17 +49,7 @@ Jinja2 is a powerful and flexible template engine that makes it easy to create d
     </body>
 </html>
 ```
-
-#### Template Rendering
-
-```python
-from jinja2 import Environment, FileSystemLoader
-
-env = Environment(loader=FileSystemLoader('templates')) # loading the jinja2 environment
-template = env.get_template("index.html")
-content = template.render(message = "Hello World !")
-print(content)
-```
+:::
 
 
 ##  Variable Filters

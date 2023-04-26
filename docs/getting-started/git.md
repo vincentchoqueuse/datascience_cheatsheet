@@ -1,12 +1,13 @@
 # Git
 
+* [Documentation](https://git-scm.com/docs)
+
 Git is an open-source version control system for software development. Git allows developers to track changes to their codebase over time, collaborate with others on software projects, and manage multiple versions of a codebase simultaneously. It works by creating a "repository" that stores all of the code and version history for a project, and allowing users to "commit" changes to the repository, along with a message describing the changes.
 
 Git also provides tools for collaborating with other developers on a project, such as "pull requests" and "branches" that allow developers to propose changes and collaborate on new features without disrupting the main codebase.
 
 One of the key benefits of using Git is that it allows developers to easily manage and merge multiple versions of a codebase, even if those versions have diverged significantly over time. It also provides powerful tools for undoing changes, reverting to earlier versions of a codebase, and managing conflicts that can arise when multiple developers are working on the same code.
 
-* [Documentation](https://git-scm.com/docs)
 * [Book](https://git-scm.com/book/en/v2)
 
 ## Basic Usage

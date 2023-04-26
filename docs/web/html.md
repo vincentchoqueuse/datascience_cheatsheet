@@ -1,8 +1,9 @@
 # HTML
 
+* [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
 HTML (Hypertext Markup Language) is a programming language used to create and structure content for the web. It is the foundation of web development and is used to create static web pages, dynamic websites, and web applications. HTML uses tags and attributes to define the structure, layout, and content of a web page, including headings, paragraphs, images, links, tables, and forms. HTML documents can be viewed in web browsers and can be styled and formatted using CSS (Cascading Style Sheets). 
 
-* [Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ## Basic Usage
 
