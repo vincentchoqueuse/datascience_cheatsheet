@@ -201,3 +201,6 @@ See the Jinja cheatsheet for more info about the template syntax.
 Some features from Jinja are not available, notably the ability to remove whitespace before and after jinja tags with the `-` prefix/suffix.
 It is possible to use the Jinja engine instead of the Django engine by changing [the template configuration](https://docs.djangoproject.com/en/4.1/ref/settings/#templates) in the settings.
 
+
+## Class Based Views
+

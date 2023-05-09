@@ -33,6 +33,8 @@ This code is using two Python libraries for data visualization: `matplotlib` and
 * The third line loads the titanic dataset from the seaborn library and assigns it to the variable data.
 * The fourth line creates a histogram (distribution plot) of the "age" column of the data DataFrame using sns.distplot().
 
+
+
 ## Continuous Distributions
 
 Seaborn provides several functions to plot continuous distributions such as Histogram (`sns.histplot()`), Kernel density plot (`sns.kdeplot()`), and Rug plot (`sns.rugplot()`).

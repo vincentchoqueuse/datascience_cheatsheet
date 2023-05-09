@@ -96,6 +96,10 @@ You can access the index of a loop iteration using the `loop.index` variable.
 
 ## Template Inheritance
 
+Template inheritance in Jinja is a way to reuse common elements across multiple templates in a web application. It allows you to define a base template with the common elements such as header, footer, navigation bar, etc., and then inherit from it in child templates. The child templates can then override specific blocks in the base template with their own content, while still keeping the common elements.
+
+To use template inheritance in Jinja, you first define a base template using the `{% extends %}` tag. Then you can define blocks within the base template using the `{% block %}` tag. In the child templates, you can override specific blocks using the same `{% block %}` tag with the same name.
+
 
 ::: code-group
 ```html [base.html]
