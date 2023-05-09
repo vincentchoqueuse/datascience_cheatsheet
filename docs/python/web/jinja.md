@@ -51,6 +51,12 @@ print(content)
 ```
 :::
 
+It is also possible to dump the complete stream into a file or file-like object. Per default strings are written, if you want to encode before writing specify an encoding.
+
+```python
+template.stream(message = "Hello World !").dump('hello.html')
+```
+
 
 ##  Variable Filters
 
