@@ -11,9 +11,6 @@ Flask includes a built-in development server, as well as a variety of tools and 
 Flask is a popular choice for web development in Python due to its simplicity, flexibility, and extensibility. It is often used for small to medium-sized web applications and prototypes, and can be easily scaled up as needed using extensions and external libraries.
 
 
-
-
-
 ## Installation
 
 Use the following command to install Flask:
