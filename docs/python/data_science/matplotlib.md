@@ -32,6 +32,25 @@ plt.xlabel('time [s]')
 plt.show()
 ```
 
+You can superpose multiple plots by calling `plot` several times.
+
+```python 
+import numpy as np
+import matplotlib.pyplot as plt
+
+fs = 0.01 # sampling frequency
+n = np.arange(100)  # create and array with evenly spaced values within [0, 100) with step 1
+t = n/fs
+x1 = np.sin(2*np.pi*5*t)
+x2 = np.cos(2*np.pi*5*t)
+
+plt.plot(t, x1, label="sin")
+plt.plot(t, x2, label="cos")
+plt.xlabel('time [s]')
+plt.legend() # add a legend
+plt.show()
+```
+
 ## Copy & Paste Plots
 
 ### Analysis of LTI systems

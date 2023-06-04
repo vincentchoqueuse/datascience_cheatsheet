@@ -4,7 +4,7 @@ export default {
   description: 'ENIB Data Science Cheatsheet.',
   base: "/datascience_cheatsheet/",
   themeConfig: {
-    //logo: '/ENIB.svg',
+    logo: '/ENIB.svg',
     outline: 'deep',
     footer: {
       message: 'Released under the MIT License.',
