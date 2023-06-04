@@ -1,10 +1,12 @@
 export default {
   title: 'Cheatsheet',
-
   description: 'ENIB Data Science Cheatsheet.',
   base: "/datascience_cheatsheet/",
   themeConfig: {
     logo: '/ENIB.svg',
+    search: {
+      provider: 'local'
+    },
     outline: 'deep',
     footer: {
       message: 'Released under the MIT License.',
