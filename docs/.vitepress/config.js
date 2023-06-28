@@ -71,6 +71,7 @@ export default {
             { text: 'Numpy', link: '/python/data_science/numpy' },
             { text: 'Scipy', link: '/python/data_science/scipy' },
             { text: 'Matplotlib', link: '/python/data_science/matplotlib' },
+            { text: 'Pandas', link: '/python/data_science/pandas' },
             { text: 'Plotly', link: '/python/data_science/plotly' },
             { text: 'Jupyter', link: '/python/data_science/notebook' },
             { text: 'Seaborn', link: '/python/data_science/seaborn' },
